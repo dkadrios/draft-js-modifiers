@@ -1,6 +1,6 @@
 {
-  "name": "draft-js-modifiers",
-  "version": "0.2.2",
+  "name": "@studysync/draft-js-modifiers",
+  "version": "0.3.0",
   "description": "Modular state modifiers for Draft.js",
   "main": "index.js",
   "module": "es/index.js",
@@ -14,7 +14,7 @@
     "draft-js",
     "draft-js-modifiers"
   ],
-  "repository": "git@github.com:sugarshin/draft-js-modifiers.git",
+  "repository": "https://github.com/dkadrios/draft-js-modifiers.git",
   "author": "sugarshin",
   "license": "MIT",
   "scripts": {
@@ -41,7 +41,7 @@
     ]
   },
   "dependencies": {
-    "draft-js": "~0.10.5",
+    "draft-js": "^0.11.7",
     "immutable": "~3.7.4"
   },
   "devDependencies": {
