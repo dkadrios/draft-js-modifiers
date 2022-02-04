@@ -3,6 +3,9 @@
 .*/node_modules/draft-js/lib/ContentBlock.js.flow
 .*/node_modules/draft-js/lib/ContentBlockNode.js.flow
 .*/node_modules/draft-js/lib/DraftEditorLeaf.react.js.flow
+.*/node_modules/@babel/helper-define-polyfill-provider/src/node/dependencies.js
+.*/node_modules/resolve/test/resolver/malformed_package_json/package.json
+.*\.js.flow
 
 [include]
 
