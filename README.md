@@ -34,10 +34,28 @@ import { insertText } from 'draft-js-modifiers'
 
 ## Methods
 
+### `addBlock`
+
+```js
+addBlock(
+  editorState: EditorState,
+  selection,
+  type: string,
+  data: { [id: string]: any },
+  entityType: string,
+  text?: ?string = ' '
+```
+
 ### `adjustBlockDepth`
 
 ```js
 adjustBlockDepth(editorState: EditorState, adjustment: number, maxDepth: number)
+```
+
+### `getCurrentBlock`
+
+```js
+getCurrentBlock(editorState): EditorState
 ```
 
 ### `insertAtomicBlock`
@@ -105,6 +123,18 @@ modifyBlock(editorState: EditorState, blockData: ContentBlock)
 modifyBlockByKey(editorState: EditorState, blockKey: string, blockData: ContentBlock)
 ```
 
+### `moveCaretAfterBlock`
+
+```js
+moveCaretAfterBlock(editorState: EditorState, block: ContentBlock)
+```
+
+### `removeBlock`
+
+```js
+removeBlock(contentState, blockKey)
+```
+
 ### `removeBlockStyle`
 
 ```js
@@ -121,6 +151,18 @@ removeInlineStyles(editorState: EditorState, inlineStyles: Array<string> = [])
 
 ```js
 resetBlock(editorState: EditorState, block: ContentBlock)
+```
+
+### `selectBlockByKey`
+
+```js
+selectBlockByKey(editorState: EditorState, key: string)
+```
+
+### `toggleBlockStyle`
+
+```js
+toggleBlockStyle(editorState, { type: blockStyle, data })
 ```
 
 ### `toggleBlockType`
