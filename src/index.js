@@ -1,5 +1,7 @@
 export { default as addBlock } from './addBlock'
 export { default as adjustBlockDepth } from './adjustBlockDepth'
+export { default as atEndOfBlock } from './atEndOfBlock'
+export { default as atStartOfBlock } from './atStartOfBlock'
 export { default as getAllEntities } from './getAllEntities'
 export { default as getCurrentBlock } from './utils/getCurrentBlock'
 export { default as getEntitiesForBlock } from './getEntitiesForBlock'
@@ -32,3 +34,5 @@ export { default as toggleEntity } from './toggleEntity'
 export { default as toggleInlineStyle } from './toggleInlineStyle'
 
 export const DRAFTJS_BLOCK_KEY = 'DRAFTJS_BLOCK_KEY'
+export const HANDLED = 'handled'
+export const NOT_HANDLED = 'not-handled'
