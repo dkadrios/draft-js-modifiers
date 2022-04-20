@@ -1,12 +1,13 @@
-const getSimilarAdjacentBlocks = (editorState, block) => {
+const getSimilarAdjacentBlocks = (editorState, block, includeDepth = true) => {
   const blockType = block.getType()
   const depth = block.getDepth()
   const variant = block.getData().get('variant')
 
   const contentState = editorState.getCurrentContent()
 
-  const matches = aBlock => (aBlock.getType() === blockType)
-    && (aBlock.getDepth() === depth)
+  const matches = aBlock => aBlock
+    && (aBlock.getType() === blockType)
+    && (!includeDepth || (aBlock.getDepth() === depth))
     && (aBlock.getData().get('variant') === variant)
 
   const before = []
