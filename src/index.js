@@ -35,6 +35,7 @@ export { default as toggleBlockStyle } from './toggleBlockStyle'
 export { default as toggleBlockType } from './toggleBlockType'
 export { default as toggleEntity } from './toggleEntity'
 export { default as toggleInlineStyle } from './toggleInlineStyle'
+export { default as trimEditorState } from './trimEditorState'
 
 export const DRAFTJS_BLOCK_KEY = 'DRAFTJS_BLOCK_KEY'
 export const HANDLED = 'handled'
