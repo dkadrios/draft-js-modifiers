@@ -1,6 +1,6 @@
 {
   "name": "@studysync/draft-js-modifiers",
-  "version": "0.4.9",
+  "version": "0.4.11",
   "description": "Modular state modifiers for Draft.js",
   "main": "index.js",
   "module": "es/index.js",
