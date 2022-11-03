@@ -1,6 +1,6 @@
 {
   "name": "@studysync/draft-js-modifiers",
-  "version": "0.4.12",
+  "version": "0.4.15",
   "description": "Modular state modifiers for Draft.js",
   "main": "index.js",
   "module": "es/index.js",
@@ -61,5 +61,8 @@
     "nyc": "^11.8.0",
     "react": ">=17",
     "react-dom": ">=17"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.4"
   }
 }
