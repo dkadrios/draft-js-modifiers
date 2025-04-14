@@ -27,7 +27,7 @@ const insertEntity = (editorState, text, type, data, mutability = 'MUTABLE') => 
 
   const entityKey = newContentWithEntity.getLastCreatedEntityKey()
 
-  const anchorOffset = selection.getAnchorOffset()
+  const anchorOffset = selection.getStartOffset()
   const newSelection = new SelectionState({
     anchorKey: selection.getAnchorKey(),
     anchorOffset,
