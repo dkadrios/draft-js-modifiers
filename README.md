@@ -8,17 +8,35 @@
 Modular state modifiers for [Draft.js](https://draftjs.org/)
 
 ```bash
-yarn add draft-js-modifiers
+yarn add @studysync/draft-js-modifiers draft-js
 
 # or
 
-npm i draft-js-modifiers
+npm i @studysync/draft-js-modifiers draft-js
+```
+
+This package ships with `immutable@3.8.3`, the patched `3.x` line for the prototype-pollution advisory described in the GitHub advisory for [`immutable`](https://github.com/advisories/GHSA-wf6x-7x77-mvgw).
+
+When your app also uses other legacy Draft.js packages, force a single patched `immutable` 3.x version at the app root:
+
+```json
+{
+  "overrides": {
+    "immutable": "3.8.3",
+    "draft-js": {
+      "immutable": "3.8.3"
+    }
+  },
+  "resolutions": {
+    "immutable": "3.8.3"
+  }
+}
 ```
 
 ## Usage
 
 ```js
-import * as Modifiers from 'draft-js-modifiers'
+import * as Modifiers from '@studysync/draft-js-modifiers'
 
 const newEditorState = Modifiers.mergeBlockData(currentEditorState, { foo: 1 })
 ```
@@ -26,10 +44,10 @@ const newEditorState = Modifiers.mergeBlockData(currentEditorState, { foo: 1 })
 ### Moduler importing
 
 ```js
-import adjustBlockDepth from 'draft-js-modifiers/adjustBlockDepth'
+import adjustBlockDepth from '@studysync/draft-js-modifiers/adjustBlockDepth'
 
 // Support Tree Shaking for webpack, rollup.js
-import { insertText } from 'draft-js-modifiers'
+import { insertText } from '@studysync/draft-js-modifiers'
 ```
 
 ## Methods

@@ -1,6 +1,6 @@
 {
   "name": "@studysync/draft-js-modifiers",
-  "version": "0.4.15",
+  "version": "0.5.1",
   "description": "Modular state modifiers for Draft.js",
   "main": "index.js",
   "module": "es/index.js",
@@ -40,9 +40,11 @@
       "@babel/register"
     ]
   },
+  "peerDependencies": {
+    "draft-js": "^0.11.7"
+  },
   "dependencies": {
-    "draft-js": "^0.11.7",
-    "immutable": "~3.7.4"
+    "immutable": "3.8.3"
   },
   "devDependencies": {
     "@babel/cli": "7.17.0",
@@ -53,6 +55,7 @@
     "ava": "^0.25.0",
     "babel-eslint": "^8.2.3",
     "coveralls": "^3.0.1",
+    "draft-js": "0.11.7",
     "eslint": "^4.19.1",
     "eslint-plugin-ava": "^4.5.1",
     "eslint-plugin-babel": "^5.1.0",
@@ -62,7 +65,11 @@
     "react": ">=17",
     "react-dom": ">=17"
   },
+  "overrides": {
+    "immutable": "3.8.3"
+  },
   "resolutions": {
-    "graceful-fs": "4.2.4"
+    "graceful-fs": "4.2.4",
+    "immutable": "3.8.3"
   }
 }
